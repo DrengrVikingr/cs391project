@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div>
+			<form>
+			  <input type=email name=email_address_sign_up placeholder="E-mail Address" onblur="checkEmail">
+			  <br>
+			  <input type=text name=user_name placeholder="Name">
+			  <input type=text name=user_surname placeholder="Surname">
+			  <br>
+			  <label for=birthdate>Birthdate</label>
+			  <input type=date id=birthdate name=date_of_birth min="1930-01-01" max="2010-12-31" required>
+			  <br>
+			  <input type=password_sign_up placeholder="Password">
+			  <br>
+			  <button type=submit>Sign Up</button>
+			</form>
+		</div>
+		<div>
+			<form>
+			  <input type=text name=email_address_login placeholder="E-mail Address">
+			  <br>
+			  <input type=password name=password_login placeholder="Password">
+			  <br>
+			  <button type=submit>Login</button>
+			</form>
+		</div>
+	</body>
+</html>
