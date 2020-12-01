@@ -16,9 +16,9 @@ The main goal of our project is to offer a website where users can view recipes.
 - User adds a new recipe to the desired category
 
 3.
-Hasan Bilgin -> Sign up/Login page
-Eray Özdayıoğlu -> Home page
-Yasemin Orhun -> Recipe pages
+Hasan Bilgin -> Sign up/Login page\
+Eray Özdayıoğlu -> Home page\
+Yasemin Orhun -> Recipe pages\
 Zeliha Aydın -> Design of pages with CSS
 
 4.
