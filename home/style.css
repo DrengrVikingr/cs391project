@@ -1,0 +1,48 @@
+body {
+  background-color: #FFF1EF;
+}
+
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6F361E;
+}
+
+li {
+  float: right;
+  padding-right: 25px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 18px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 18px
+}
+
+li.marmotte {
+  float : left;
+  padding-left: 25px;
+}
+
+a.marmotte {
+  font-size: 25px;
+  font-family: Salsa;
+}
+
+div {
+  margin-top: 120px;
+  text-align: center;
+  
+}
+
+div a {
+  text-align: top;
+}
+/* Change the link color to #111 (black) on hover */
