@@ -19,7 +19,7 @@ The main goal of our project is to offer a website where users can view recipes.
 Hasan Bilgin -> Sign up/Login page\
 Eray Özdayıoğlu -> Home page\
 Yasemin Orhun -> Recipe pages\
-Zeliha Aydın -> Design of pages with CSS
+Zeliha Aydın -> Add Recipe page
 
 4.
 Our project does not make use of any external libraries.
