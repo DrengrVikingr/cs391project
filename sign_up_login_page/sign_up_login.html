@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script type="text/javascript" src="sign_up_login.js"></script>
 	</head>
 	<body>
 		<div>
 			<form>
-			  <input type=email name=email_address_sign_up placeholder="E-mail Address" onblur="checkEmail">
+			  <input type=email name=email_address_sign_up placeholder="E-mail Address">
 			  <br>
 			  <input type=text name=user_name placeholder="Name">
 			  <input type=text name=user_surname placeholder="Surname">
@@ -15,16 +16,18 @@
 			  <br>
 			  <input type=password_sign_up placeholder="Password">
 			  <br>
-			  <button type=submit>Sign Up</button>
+			  <button type=submit onclick="signUp()">Sign Up</button>
 			</form>
 		</div>
 		<div>
-			<form>
+			<form method = "POST" action = "/main_menu.html" onsubmit = "return login()">
 			  <input type=text name=email_address_login placeholder="E-mail Address">
 			  <br>
 			  <input type=password name=password_login placeholder="Password">
 			  <br>
 			  <button type=submit>Login</button>
+        <br>
+        <p id="login_error">&nbsp</p>
 			</form>
 		</div>
 	</body>
