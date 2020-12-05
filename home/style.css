@@ -1,5 +1,5 @@
 body {
-  background-color: #FFF1EF;
+  background-color: #E2CCB7;
 }
 
 
@@ -8,7 +8,7 @@ ul {
   margin-top: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #6F361E;
+  background-color:#844018;
 }
 
 li {
@@ -38,11 +38,25 @@ a.marmotte {
 
 div {
   margin-top: 120px;
-  text-align: center;
+  margin-left: 80px;
   
 }
-
-div a {
-  text-align: top;
+div img {
+  float: left;
+}
+a.Header {
+  vertical-align: top;
+  padding-left: 45px;
+  font-size: 30px;
+  color: #71340E ;
+  font-weight: bold;
 }
 /* Change the link color to #111 (black) on hover */
+
+p.desc {
+  padding-left: 45px;
+  font-size: 16px;
+  margin-left: 450px;
+  margin-right: 70px;
+  color: #71340E ;
+}
