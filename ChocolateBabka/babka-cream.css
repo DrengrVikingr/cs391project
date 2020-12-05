@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background: #F3EBE3;
+}
+
+header {
+  width: 100%;
+  left: 0;
+  background: #D9BDA2;
+  padding: 20px 0;
+  color: #fff;
+
+  top: 0;
+  position: fixed;
+ text-align: center;
+}
+footer {
+  background: #E2CCB7;
+  font-family: 'Roboto';
+  color: #F3EBE3;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  height: 80px;
+}
+
+div.footer-content{
+	text-align: center;
+	padding-top: 15px;
+}
+
+p.exp{
+	font-size: 10px;
+		
+}
+
+
+nav a.element{
+  font-family: 'Roboto';
+  color: #fff;
+  text-decoration:none;
+  padding: 0px 20px;
+  margin-right: 20px;
+text-align: center;
+  
+}
+
+nav a.name{
+	font-size: 40px;
+	font-family: Salsa;
+	margin-right: 900px;
+}
+
+nav a.icon{
+	margin-right: 20px;
+}
+
+nav a:hover {
+	color:darkgray;
+
+}
+
+
+#content {
+	
+	float:left;
+	width: 700px;
+	align-content: center;
+	margin-top: 100px;
+	margin-left: 400px;
+	margin-bottom: 100px;
+	
+}
+#sidebar{
+	width: 240px;
+	float: right;
+	margin-top: 100px;
+	margin-right: 400px;
+    text-align: left;
+	 
+}
+ul{
+	font-family: 'Roboto';
+	text-align: left;
+	color:#494949;
+}
+
+h1 {
+  font-family: 'Roboto';
+  text-align: left;
+  color: #3D3D3D;	
+}
+h3 {
+  font-family: 'Roboto';
+  text-align: left;
+	font-size: 16;
+	color: #3D3D3D ;
+}
+
+article.recipe {
+  font-family: 'Roboto';
+  text-align: justify;
+  padding-top: 20px;
+  color: #494949;
+}
+img.recipe {
+  display: block;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
