@@ -5,29 +5,31 @@
 	</head>
 	<body>
 		<div>
-			<form>
-			  <input type=email name=email_address_sign_up placeholder="E-mail Address">
+			<form method = "POST">
+			  <input type=email name="email_address_sign_up" placeholder="E-mail Address">
 			  <br>
-			  <input type=text name=user_name placeholder="Name">
-			  <input type=text name=user_surname placeholder="Surname">
+			  <input type=text name="user_name" placeholder="Name">
+			  <input type=text name="user_surname" placeholder="Surname">
 			  <br>
-			  <label for=birthdate>Birthdate</label>
-			  <input type=date id=birthdate name=date_of_birth min="1930-01-01" max="2010-12-31" required>
+			  <label for="birthdate">Birthdate</label>
+			  <input type=date id="birthdate" name="date_of_birth" min="1930-01-01" max="2010-12-31" required>
 			  <br>
-			  <input type=password_sign_up placeholder="Password">
+			  <input type=password name="password_sign_up" placeholder="Password">
 			  <br>
 			  <button type=submit onclick="signUp()">Sign Up</button>
+			  <br>
+			  <p id="sign_up_error">&nbsp </p>
 			</form>
 		</div>
 		<div>
-			<form method = "POST" action = "/main_menu.html" onsubmit = "return login()">
-			  <input type=text name=email_address_login placeholder="E-mail Address">
+			<form method = "POST" action = "../home/index.html" onsubmit = "return login()">
+			  <input type=email name="email_address_login" placeholder="E-mail Address" required>
 			  <br>
-			  <input type=password name=password_login placeholder="Password">
+			  <input type=password name="password_login" placeholder="Password" required>
 			  <br>
 			  <button type=submit>Login</button>
-        <br>
-        <p id="login_error">&nbsp</p>
+			  <br>
+			  <p id="login_error">&nbsp </p>
 			</form>
 		</div>
 	</body>
