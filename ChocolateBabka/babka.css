@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+  margin-top: 5%;
+  background: #fff5ea;
+}
+header {
+  width: 100%;
+  left: 0;
+  background: #968c83;
+  padding: 0.5% 0;
+  font-size: 18px;
+  top: 0;
+  position: fixed;
+  color: white;
+}
+div.navigation {
+  float: right;
+  padding: 1% 2% 0% 2%;
+}
+div.navigation a {
+  font-family: 'Roboto';
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+}
+nav a.marmotte {
+  font-size: 40px;
+  font-family: Bebas Neue;
+  padding-left: 1%;
+  letter-spacing: 4px;
+}
+div.pagetitle {
+  height: 30%;
+  width: 60%;
+  font-family: 'Roboto';
+  margin: 0 auto;
+  color: #504A44;
+}
+a.icon {
+  padding-left: 2%;
+}
+nav a:hover {
+  color: darkgray;
+}
+footer {
+  background: #968c83;
+  font-family: 'Roboto';
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  height: 80px;
+}
+div.footer-content {
+  text-align: center;
+  padding-top: 15px;
+}
+p.footer {
+  font-size: 10px;
+}
+#content {
+  float: left;
+  width: 40%;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 2%;
+  margin-bottom: 100px;
+  font-family: 'Roboto';
+  text-align: justify;
+  color: #504A44;
+}
+article.recipe {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+img.recipe {
+  width: 100%;
+}
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+#sidebar {
+  width: 15%;
+  float: left;
+  padding: 0% 2% 2% 2%;
+  margin-top: 2%;
+  margin-right: 5%;
+  text-align: left;
+  font-family: 'Roboto';
+  color: #504A44;
+  background: #ffffff;
+}
