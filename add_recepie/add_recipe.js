@@ -6,7 +6,7 @@ function addRecipe(){
 
     if(localStorage) {
         if(localStorage.getItem(recipe_name) == null){
-            localStorage.setItem(recipe_category,recipe_name,intergridents,recipe_dec)
+            localStorage.setItem(recipe_category,recipe_name,intergridents,recipe_dec )
         }else{
             document.getElementById("name_error").innerHTML = "This recipe name is already exist"
         }
