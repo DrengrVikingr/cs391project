@@ -26,9 +26,11 @@ div.navigation a {
 }
 nav a.marmotte {
   font-size: 40px;
-  font-family: Bebas Neue;
-  padding-left: 1%;
-  letter-spacing: 4px;
+    font-family: Bebas Neue;
+    padding-left: 1%;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: inherit;
 }
 div.pagetitle {
   float: left;
