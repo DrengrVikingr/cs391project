@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="sign_up_login.css">
 		<script type="text/javascript" src="sign_up_login.js"></script>
 	</head>
 	<body>
+		<header>
+  			<nav><a class="icon"><img  height="50px" src="img/logo-cream.png"/></a><a class="marmotte" href="../home/index.html">La Marmotte</a>
+    		<div class="navigation"><a  href="../home/index.html">Home</a><a  href="../home/index.html">|</a><a  href="#">Categories</a><a  href="recipeSite.html">|</a><a  href="../add_recipe_page/add_recipe.html">Add Recipe</a></div>
+  			</nav>
+		</header>
 		<div>
-			<form method = "POST">
-			  <input type=email name="email_address_sign_up" placeholder="E-mail Address">
+			<form method="POST" onsubmit="return sign_up()">
+			  <input type="email" name="email_address_sign_up" placeholder="E-mail Address">
 			  <br>
-			  <input type=text name="user_name" placeholder="Name">
-			  <input type=text name="user_surname" placeholder="Surname">
+			  <input type="text" name="user_name" placeholder="Name">
+			  <input type="text" name="user_surname" placeholder="Surname">
 			  <br>
 			  <label for="birthdate">Birthdate</label>
-			  <input type=date id="birthdate" name="date_of_birth" min="1930-01-01" max="2010-12-31" required>
+			  <input type="date" id="birthdate" name="date_of_birth" min="1930-01-01" max="2010-12-31" required>
 			  <br>
-			  <input type=password name="password_sign_up" placeholder="Password">
+			  <input type="password" name="password_sign_up" placeholder="Password">
 			  <br>
-			  <button type=submit onclick="signUp()">Sign Up</button>
+			  <button type="submit" onclick="signUp()">Sign Up</button>
 			  <br>
 			  <p id="sign_up_error">&nbsp </p>
 			</form>
 		</div>
 		<div>
-			<form method = "POST" action = "../home/index.html" onsubmit = "return login()">
-			  <input type=email name="email_address_login" placeholder="E-mail Address" required>
+			<form method="POST" action="../home/index.html" onsubmit="return login()">
+			  <input type="email" name="email_address_login" placeholder="E-mail Address" required>
 			  <br>
-			  <input type=password name="password_login" placeholder="Password" required>
+			  <input type="password" name="password_login" placeholder="Password" required>
 			  <br>
-			  <button type=submit>Login</button>
+			  <button type="submit">Login</button>
 			  <br>
 			  <p id="login_error">&nbsp </p>
 			</form>
 		</div>
+		<footer>
+			<div class = "footer-content">About us:
+				<p class="footer">The main goal of our project is to offer a website where users can view recipes. Recipes are categorized and the categories are displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.</p>
+			</div>
+		</footer>
 	</body>
 </html>

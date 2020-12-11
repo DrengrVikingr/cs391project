@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background: #fff5ea;
+    margin-top: 5%;
+}
+
+header {
+    width: 100%;
+    left: 0;
+    background: rgba(150,140,131,0.85);
+    padding: 0.5% 0;
+    font-size: 18px;
+    top: 0;
+    position: fixed;
+    color: white;
+}
+  
+a.icon {
+    padding-left: 2%;
+}
+
+nav a.marmotte {
+    font-size: 40px;
+    font-family: Bebas Neue;
+    padding-left: 1%;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: inherit;
+}
+
+div.navigation {
+    float: right;
+    padding: 1% 2% 0% 2%;
+}
+
+div.navigation a {
+    font-family: 'Roboto';
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+}
+  
+  
+  
+footer {
+    background: #968c83;
+    font-family: 'Roboto';
+    color: #ffffff;
+    text-align: center;
+    width: 99.5%;
+    display: inline-block;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+div.footer-content {
+    text-align: center;
+    padding-top: 15px;
+}
+
+p.footer {
+    font-size: 10px;
+}
