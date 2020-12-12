@@ -4,7 +4,7 @@ function checkEmpty() {
   var surname = document.getElementsByName("surname")[0];
   var birthdate = document.getElementById("birthdate").value;
   var password = document.getElementsByName("password_sign_up")[0].value;
-  return email != "" | name != null | surname != null | birthdate != "" | password != "";
+  return email != "" & name != null & surname != null & birthdate != "" & password != "";
 }
 
 function signUp() {

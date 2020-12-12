@@ -12,15 +12,16 @@
 		</header>
 		<div>
 			<form method="POST" onsubmit="return sign_up()">
-			  <input type="email" name="email_address_sign_up" placeholder="E-mail Address">
+			  <input type="email" name="email_address_sign_up" placeholder="E-mail Address" required>
 			  <br>
-			  <input type="text" name="user_name" placeholder="Name">
-			  <input type="text" name="user_surname" placeholder="Surname">
+			  <input type="text" name="user_name" placeholder="Name" required>
 			  <br>
-			  <label for="birthdate">Birthdate</label>
-			  <input type="date" id="birthdate" name="date_of_birth" min="1930-01-01" max="2010-12-31" required>
+			  <input type="text" name="user_surname" placeholder="Surname" required>
 			  <br>
-			  <input type="password" name="password_sign_up" placeholder="Password">
+			  <label for="birthdate" style="color: #665F59; margin: 10px;">Birthdate</label>
+			  <input type="date" id="birthdate" name="date_of_birth" style="color: #665F59;" min="1930-01-01" max="2010-12-31" required>
+			  <br>
+			  <input type="password" name="password_sign_up" placeholder="Password" required>
 			  <br>
 			  <button type="submit" onclick="signUp()">Sign Up</button>
 			  <br>
@@ -37,7 +38,7 @@
 			  <br>
 			  <p id="login_error">&nbsp </p>
 			</form>
-		</div>
+		</div>	
 		<footer>
 			<div class = "footer-content">About us:
 				<p class="footer">The main goal of our project is to offer a website where users can view recipes. Recipes are categorized and the categories are displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.</p>
