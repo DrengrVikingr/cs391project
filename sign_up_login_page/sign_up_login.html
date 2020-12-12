@@ -6,8 +6,30 @@
 	</head>
 	<body>
 		<header>
-  			<nav><a class="icon"><img  height="50px" src="img/logo-cream.png"/></a><a class="marmotte" href="../home/index.html">La Marmotte</a>
-    		<div class="navigation"><a  href="../home/index.html">Home</a><a  href="../home/index.html">|</a><a  href="#">Categories</a><a  href="recipeSite.html">|</a><a  href="../add_recipe_page/add_recipe.html">Add Recipe</a></div>
+  			<nav>
+				<a class="icon"><img  height="50px" src="img/logo-cream.png"/></a>
+				<a class="marmotte" href="../home/index.html">La Marmotte</a>
+    			<div class="navigation">
+					<a  href="../home/index.html">Home</a>
+					|
+					<label for="categories" class="label">Categories</label>
+					<select name="categories" style="margin-right: 10px;" onchange="location = this.value;">
+						<optgroup label="Starters" id="starters">
+							<option></option>
+							<option></option>
+						 </optgroup>
+						 <optgroup label="Main Dishes" id="mainDishes">
+							<option></option>
+							<option></option>
+						 </optgroup>
+						 <optgroup label="Desserts" id="desserts">
+							<option value="../ChocolateBabka/babka.html">Chocolate Babka</option>
+							<option></option>
+						 </optgroup>
+					</select>
+					|
+					<a  href="../add_recipe_page/add_recipe.html">Add Recipe</a>
+				</div>
   			</nav>
 		</header>
 		<div>

@@ -43,6 +43,15 @@ div.navigation {
 }
 
 div.navigation a {
+    margin-right: 10px;
+    font-family: 'Roboto';
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.label {
+    margin-right: 10px;
     font-family: 'Roboto';
     color: white;
     text-decoration: none;
@@ -51,7 +60,7 @@ div.navigation a {
 
 form {
     display: inline-block;
-    width: 50%;
+    width: 40%;
     margin: 2.5%;
     background-color: rgb(166, 156, 146, 0.3);
 }
