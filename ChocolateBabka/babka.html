@@ -5,10 +5,35 @@
 <link rel="stylesheet" href="babka.css">
 </head>
 <header>
-  <nav><a class="icon"><img  height="50px" src="img/logo-cream.png"/></a><a class="marmotte" href="../home/index.html">La Marmotte</a>
-    <div class="navigation"><a  href="../home/index.html">Home</a><a  href="../home/index.html">|</a><a  href="#">Categories</a><a  href="recipeSite.html">|</a><a  href="../add_recipe_page/add_recipe.html">Add Recipe</a></div>
-  </nav>
-</header>
+  			<nav>
+				<a class="icon"><img  height="50px" src="img/logo-cream.png"/></a>
+				<a class="marmotte" href="../home/index.html">La Marmotte</a>
+    			<div class="navigation">
+					<a  href="../home/index.html">Home</a>
+					<a>|</a>
+					
+					<form class= "categories" action="#" method="GET">
+						<label for="recipes" class="label">Categories</label>
+							<select name="recipes"  onchange="this.form.submit()">
+								<optgroup label="Starters" id="starters">
+									<option></option>
+									<option></option>
+								 </optgroup>
+								 <optgroup label="Main Dishes" id="mainDishes">
+									<option></option>
+									<option></option>
+								 </optgroup>
+								 <optgroup label="Desserts" id="desserts">
+									<option value="nice job"></option>
+									<option></option>
+								 </optgroup>
+							</select>
+						</form>
+					<a>|</a>
+					<a  href="../add_recipe_page/add_recipe.html">Add Recipe</a>
+				</div>
+  			</nav>
+		</header>
   
 <body>
 <div class="pagetitle">
