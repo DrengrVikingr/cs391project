@@ -38,27 +38,30 @@ nav a.marmotte {
 }
 
 div.navigation {
-    float: right;
-    padding: 1% 2% 0% 2%;
+  float: right;
+  width: 30%;
+  padding: 1% 1% 0% 2%;
 }
-
 div.navigation a {
-    margin-right: 15px;
-    font-family: 'Roboto';
+  font-family: 'Roboto';
+  color: white;
+  text-decoration: none;
+ margin: 2.5%;	
+}
+form.categories{	
+	font-family: 'Roboto';
     color: white;
     text-decoration: none;
-    padding-left: 30px;
+	display: inline-block;
+	margin: 2.5%;
 }
-
-.label {
-    margin-right: 10px;
-    font-family: 'Roboto';
-    color: white;
-    text-decoration: none;
-    padding-left: 30px;
+form.sign_up{
+    display: inline-block;
+    width: 40%;
+    margin: 2.5%;
+    background-color: rgb(166, 156, 146, 0.3);
 }
-
-form {
+form.login{
     display: inline-block;
     width: 40%;
     margin: 2.5%;
@@ -101,4 +104,5 @@ div.footer-content {
 
 p.footer {
     font-size: 10px;
+    color: #ffffff;
 }
