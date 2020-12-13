@@ -49,15 +49,19 @@ function login() {
 }
 
 function getRecipes() {
-  if (localStorage.getItem("recipeIndex") > 0) {
-    var index = localStorage.getItem("recipeIndex");
-    for (i = 0; i < index; i++) {
-      var recipe = JSON.parse(localStorage.getItem("recipe" + i));
-      var option = document.getElementById(recipe.category);
-      var recipeOpt = document.createElement("option");
-      recipeOpt.text = recipe.name;
-      recipeOpt.value = recipe.link;
-      option.appendChild(recipeOpt);
+  if (localStorage) {
+    if (localStorage.getItem("recipeIndex") > 0) {
+      var index = localStorage.getItem("recipeIndex");
+      for (i = 0; i < index; i++) {
+        var recipe = JSON.parse(localStorage.getItem("recipe" + i));
+        var option = document.getElementById(recipe.category);
+        var recipeOpt = document.createElement("option");
+        recipeOpt.text = recipe.name;
+        recipeOpt.value = recipe.name;
+        option.appendChild(recipeOpt);
+      }
     }
+  } else {
+    alert("Sorry, your browser does not support local storage");
   }
 }

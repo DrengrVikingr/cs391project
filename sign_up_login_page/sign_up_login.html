@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="sign_up_login.css">
 		<script type="text/javascript" src="sign_up_login.js"></script>
 	</head>
-	<body>
+	<body onload="getRecipes()">
 		<header>
   			<nav>
 				<a class="icon"><img  height="50px" src="img/logo-cream.png"/></a>
@@ -12,8 +12,9 @@
     			<div class="navigation">
 					<a  href="../home/index.html">Home</a>
 					|
-					<label for="categories" class="label">Categories</label>
-					<select name="categories" style="margin-right: 10px;" onchange="location = this.value;">
+					<form action="#" method="GET">
+					<label for="recipes" class="label">Categories</label>
+					<select name="recipes" style="margin-right: 30px;" onchange="this.form.submit()">
 						<optgroup label="Starters" id="starters">
 							<option></option>
 							<option></option>
@@ -23,10 +24,11 @@
 							<option></option>
 						 </optgroup>
 						 <optgroup label="Desserts" id="desserts">
-							<option value="../ChocolateBabka/babka.html">Chocolate Babka</option>
+							<option value="nice job"></option>
 							<option></option>
 						 </optgroup>
 					</select>
+					</form>
 					|
 					<a  href="../add_recipe_page/add_recipe.html">Add Recipe</a>
 				</div>

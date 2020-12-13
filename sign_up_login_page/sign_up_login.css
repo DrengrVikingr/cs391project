@@ -43,7 +43,7 @@ div.navigation {
 }
 
 div.navigation a {
-    margin-right: 10px;
+    margin-right: 15px;
     font-family: 'Roboto';
     color: white;
     text-decoration: none;
@@ -67,6 +67,10 @@ form {
 
 input {
     margin-top: 15px;
+}
+
+p {
+    color: rgba(150,140,131,0.85);
 }
   
 button {
