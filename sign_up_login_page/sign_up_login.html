@@ -6,36 +6,30 @@
 	</head>
 	<body onload="getRecipes()">
 		<header>
-  			<nav>
-				<a class="icon"><img  height="50px" src="img/logo-cream.png"/></a>
-				<a class="marmotte" href="../home/index.html">La Marmotte</a>
-    			<div class="navigation">
-					<a  href="../home/index.html">Home</a>
-					|
-					<form action="#" method="GET">
-					<label for="recipes" class="label">Categories</label>
-					<select name="recipes" style="margin-right: 30px;" onchange="this.form.submit()">
-						<optgroup label="Starters" id="starters">
-							<option></option>
-							<option></option>
-						 </optgroup>
-						 <optgroup label="Main Dishes" id="mainDishes">
-							<option></option>
-							<option></option>
-						 </optgroup>
-						 <optgroup label="Desserts" id="desserts">
-							<option value="nice job"></option>
-							<option></option>
-						 </optgroup>
-					</select>
-					</form>
-					|
-					<a  href="../add_recipe_page/add_recipe.html">Add Recipe</a>
-				</div>
-  			</nav>
+		  <nav> <a class="icon"><img  height="50px" src="img/logo-cream.png"/></a> <a class="marmotte" href="../home/index.html">La Marmotte</a>
+		    <div class="navigation"> <a  href="../home/index.html">Home</a> <a>|</a>
+		      <form class= "categories" action="#" method="GET">
+			<label for="recipes" class="label">Categories</label>
+			<select name="recipes"  onchange="this.form.submit()">
+			  <optgroup label="Starters" id="starters">
+			  <option></option>
+			  <option></option>
+			  </optgroup>
+			  <optgroup label="Main Dishes" id="mainDishes">
+			  <option></option>
+			  <option></option>
+			  </optgroup>
+			  <optgroup label="Desserts" id="desserts">
+			  <option value="nice job"></option>
+			  <option></option>
+			  </optgroup>
+			</select>
+		      </form>
+		      <a>|</a> <a  href="../add_recipe_page/add_recipe.html">Add Recipe</a> </div>
+		  </nav>
 		</header>
 		<div>
-			<form method="POST" onsubmit="return sign_up()">
+			<form class= "sign_up" method="POST" onsubmit="return sign_up()">
 			  <input type="email" name="email_address_sign_up" placeholder="E-mail Address" required>
 			  <br>
 			  <input type="text" name="user_name" placeholder="Name" required>
@@ -53,7 +47,7 @@
 			</form>
 		</div>
 		<div>
-			<form method="POST" action="../home/index.html" onsubmit="return login()">
+			<form class= "login" method="POST" action="../home/index.html" onsubmit="return login()">
 			  <input type="email" name="email_address_login" placeholder="E-mail Address" required>
 			  <br>
 			  <input type="password" name="password_login" placeholder="Password" required>
