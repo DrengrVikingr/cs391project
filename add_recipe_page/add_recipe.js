@@ -10,5 +10,7 @@ function addRecipe(){
         }else{
             document.getElementById("name_error").innerHTML = "This recipe name is already exist"
         }
+
     }else alert("Your browser does not support local storage")
+
 }
