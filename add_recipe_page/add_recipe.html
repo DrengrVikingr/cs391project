@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-
-    </head>
     <body>
+      <header>
+      <nav> 
+        <a class="icon"><img  height="50px" src="img/logo-cream.png"/></a>
+        <a class="marmotte" href="../home/index.html">La Marmotte</a>
+        <div class="navigation"> <a  href="../home/index.html">Home</a> 
+        <a>|</a>
+		    <form class= "categories" action="#" method="GET">
+			<label for="recipes" class="label">Categories</label>
+			<select name="recipes"  onchange="this.form.submit()">
+			  <optgroup label="Starters" id="starters">
+			  <option></option>
+			  <option></option>
+			  </optgroup>
+			  <optgroup label="Main Dishes" id="mainDishes">
+			  <option></option>
+			  <option></option>
+			  </optgroup>
+			  <optgroup label="Desserts" id="desserts">
+			  <option value="nice job"></option>
+			  <option></option>
+			  </optgroup>
+			</select>
+		      </form>
+		      <a>|</a> <a  href="../add_recipe_page/add_recipe.html">Add Recipe</a> </div>
+		  </nav>
+		</header>
+		<div>
         <form action="../home/index.html" onsubmit="return addRecipe()">
             <h4>Step 1</h4>
-            <input id = "recipe_category" type="text" size = "14" placeholder="Recipe category" required>
+              <select id="recipe_category" size = 1>
+                 <option value="blank">Choose a category</option>
+                 <option value="starters">Starters</option>
+                 <option value="main_dishes">Main Dishes</option>
+                 <option value="desserts">Desserts</option>
+              </select>
             <br>
             <h4>Step 2</h4>
             <input id = "recipe_name" type="text" size = "21" placeholder="Give a name to your recipe" required>
             <br>
             <h4>Step 3</h4>
-            <input id = "ingredients" type="text" size = "32" placeholder="Add your ingredients with measurements" required>
+           <h6>Add your recipe ingredients with measurements </h6>
+            <textarea id = "ingredients" rows="3" cols="33" placeholder = "Add your ingredients" required> </textarea>
             <br>
             <h4>Step 4</h4>
-            <input id = "recipe_dec" type="text" size = "30" placeholder="Describe your recipe with more details" required>
+            <h6>Add your recipe description</h6>
+            <textarea id = "recipe_dec" raows="5" cols = "33" placeholder="Describe your recipe with more details" required> </textarea>
             <br>
               <button id = "add_recipe_button" type="submit">Add Recipe</button>
               <p id="name_error">&nbsp </p>
             </form>
     </body>
 </html>
+
+
 
