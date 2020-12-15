@@ -90,9 +90,16 @@ a.Header {
   font-weight: bold;
 }
 
+a.Author {
+  padding-left: 45px;
+  font-size: 20px;
+  color: #504A44 ;
+  font-style: italic;
+}
+
  p.desc {
   padding-left: 45px;
-  font-size: 16px;
+  font-size: 17px;
   margin-left: 450px;
   margin-right: 250px;
   color: #71340E ;
