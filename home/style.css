@@ -12,6 +12,15 @@ header {
   color: white;
 }
 
+header a:visited {
+  
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+}
+
   
 div.navigation a {
   font-family: 'Roboto';
