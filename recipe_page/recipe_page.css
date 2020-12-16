@@ -59,11 +59,9 @@ form.categories{
 }
 
 div.pagetitle {
-  float: left;
   width: 45%;
-  margin-left: 15%;
-  margin-right: 2%;
-	padding-top: 1%;
+  margin-left: 25%;
+  padding: 1% 2% 1% 1%;
   font-family: 'Roboto';
   text-align: justify;
   color: #504A44;
@@ -95,17 +93,18 @@ p.footer {
   font-size: 10px;
 }
 #content {
-  float: left;
+  
   width: 45%;
-  margin-left: 15%;
-  margin-right: 2%;
-  margin-bottom: 100px;
-  font-family: 'Roboto';
+  margin-left: 25%;
+  margin-bottom: 40px;
+  padding: 2% 2% 2% 2%;
   text-align: justify;
-  color: #504A44;
+  font-family: 'Roboto';
+  color: #665E56;
+  background: #ffffff;
   font-size: 90%;
 }
-article.recipe {
+  p.recipe {
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -113,10 +112,11 @@ img.recipe {
   width: 100%;
 }
 #ingredients {
-  width: 20%;
-  float: left;
-  padding: 0% 2% 2% 2%;
-  margin-right: 5%;
+  
+  width: 45%;
+  margin-left: 25%;
+  margin-bottom: 40px;
+  padding: 2% 2% 2% 2%;
   text-align: left;
   font-family: 'Roboto';
   color: #665E56;
@@ -127,19 +127,19 @@ img.ingredient_icon {
   width: 40px;
   height: 40px;
 }
-#method {
-  width: 20%;
-  float: left;
-  padding: 0% 2% 2% 2%;
-  margin-top: 1%;
-  margin-right: 5%;
+#instructions {
+  
+  width: 45%;
+  margin-left: 25%;
+  margin-bottom: 80px;
+  padding: 2% 2% 2% 2%;
   text-align: left;
   font-family: 'Roboto';
   color: #665E56;
   background: #ffffff;
-  font-size: 80%;
+  font-size: 90%;
 }
-img.method_icon {
+img.instructions_icon {
   width: 40px;
   height: 40px;
 }
