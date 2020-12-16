@@ -38,7 +38,7 @@ nav a.marmotte {
 }
 
 div.navigation {
-  float: right;
+ float: right;
   width: 30%;
   padding: 1% 1% 0% 2%;
 }
@@ -46,8 +46,11 @@ div.navigation a {
   font-family: 'Roboto';
   color: white;
   text-decoration: none;
- margin: 2.5%;
+  margin: 2.5%;
 	
+}
+a.icon {
+  padding-left: 2%;
 }
 
 form.categories{	
@@ -72,9 +75,6 @@ div.pagetitle {
 h3.author {
   font-size: 95%;
 }
-a.icon {
-  padding-left: 2%;
-}
 
 footer {
   background: #968c83;
@@ -85,60 +85,71 @@ footer {
   display: inline-block;
   height: 80px;
 }
+
 div.footer-content {
   text-align: center;
   padding-top: 15px;
 }
+
 p.footer {
   font-size: 10px;
 }
+
 #content {
   
   width: 45%;
   margin-left: 25%;
   margin-bottom: 40px;
-  padding: 2% 2% 2% 2%;
+  padding: 0% 2% 2% 2%;
+  text-align: justify;
+  font-family: 'Roboto';
+  color: #665E56;
+  background: #ffffff;
+white-space: pre-line;
+ font-size: 90%;
+line-height: 150%;
+}
+
+img.recipe {
+  width: 100%;
+}
+
+#ingredients { 
+  width: 45%;
+  margin-left: 25%;
+  margin-bottom: 40px;
+  padding: 0% 2% 2% 2%;
+  text-align: left;
+  font-family: 'Roboto';
+  color: #665E56;
+  background: #ffffff;
+  font-size: 90%;
+  white-space: pre-line;
+  text-align: justify;
+	line-height: 200%;
+}
+
+img.ingredient_icon {
+  width: 40px;
+  height: 40px;
+}
+
+#instructions {
+  
+  width: 45%;
+  margin-left: 25%;
+  margin-bottom: 100px;
+  padding: 0% 2% 2% 2%;
   text-align: justify;
   font-family: 'Roboto';
   color: #665E56;
   background: #ffffff;
   font-size: 90%;
+  white-space: pre-line;
+	line-height: 150%;
+	
 }
-  p.recipe {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-img.recipe {
-  width: 100%;
-}
-#ingredients {
-  
-  width: 45%;
-  margin-left: 25%;
-  margin-bottom: 40px;
-  padding: 2% 2% 2% 2%;
-  text-align: left;
-  font-family: 'Roboto';
-  color: #665E56;
-  background: #ffffff;
-  font-size: 90%;
-}
-img.ingredient_icon {
-  width: 40px;
-  height: 40px;
-}
-#instructions {
-  
-  width: 45%;
-  margin-left: 25%;
-  margin-bottom: 80px;
-  padding: 2% 2% 2% 2%;
-  text-align: left;
-  font-family: 'Roboto';
-  color: #665E56;
-  background: #ffffff;
-  font-size: 90%;
-}
+
 img.instructions_icon {
   width: 40px;
   height: 40px;
