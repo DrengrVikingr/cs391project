@@ -44,6 +44,12 @@ margin: 2.5%;
 
 }
 
+button {
+  outline:none;
+  background-color:Transparent;
+  border: none;
+}
+
 form.categories{	
 font-family: 'Roboto';
   color: white;
