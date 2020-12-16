@@ -2,7 +2,8 @@
 <html>
 <meta charset="utf-8">
 <head>
-<link rel="stylesheet" href="recipe_pages.css">
+	<link rel="stylesheet" href="recipe_page.css">
+	<script type="text/javascript" src="recipe_page.js"></script>
 </head>
 <header>
   			<nav>
@@ -37,30 +38,29 @@
   
 <body>
 <div class="pagetitle">
+	<!--title from the local storage-->
   <h1 class="recipe_name">How to Make Chocolate Babka?</h1>
+	<!--author from the local storage-->
   <h3 class="author"><i>Cenk Sönmezsoy</i></h3>
 </div>
-<div id="content"> <img class="recipe" src="img/1.jpg" alt="Chocolate Babka" /><br>
-  <h1>Chocolate Babka</h1>
-  <article class="recipe">I think it was the first week o the lockdown. My doorbell rang. I hadn’t ordered anything, so I opened the door with caution. Turns out a friend of mine had bought Easter breads (flavored with mastic and mahlab) for her close-knit group of friends from a favorite bakery of mine in İstanbul, called Üstün Palmie. And I was one of those lucky recipients. It came to my door still warm from the bakery and I’ve been obsessed with baking the best version of it at home ever since. More on that later.The obsession started with that bread–actually, sweetened and flavored breads are called çörek (pronounced “chö-wreck”) in Turkey–and continued with this wonderful Chocolate Babka, drenched in a dark caramel syrup.</article>
-  <img class="recipe"  src="img/2.jpg" alt="Chocolate Babka" />
-  <article class="recipe"> For those who will be baking a babka for the first time, I highly recommend using a stand mixer. The dough is quite wet and sticky in the beginning and becomes smooth and much easier to work with after a 10-minute beating in the mixer.</article>
-  <img class="recipe"  src="img/3.jpg" alt="Chocolate Babka" />
-  <article class="recipe"> Once the dough is done, the rest is a breeze. I chill both the risen dough and the chocolate filling briefly, which makes it much easier to roll out the dough and spread the filling evenly.</article>
-  <img class="recipe"  src="img/4.jpg" alt="Chocolate Babka" />
-  <article class="recipe"> Once the logs are done, I prefer to chill them again until firm–this time in the freezer for 5-10 minutes–so that the layers don’t squish when you cut into the logs.</article>
-  <img class="recipe"  src="img/5.jpg" alt="Chocolate Babka" />
-  <article class="recipe"> The recipe makes two babkas. One is for you and the other one is for someone who you feel needs some love during these unsettling times. I wish I could have gifted my second babka to my friend who brightened my day with her thoughtful gesture, but as soon as travel restrictions were lifted she took off to her house in Selimiye–a small fishing village located on the mountainous Bozburun Peninsula, where the Mediterranean sea meets the Aegean sea and the days are always bright, with or without a babka.</article>
-  <img class="recipe"  src="img/6.jpg" alt="Chocolate Babka" />
-  <article class="recipe"> Classic recipes call for a simple sugar syrup, but I thought why bother with “simple” when you can drench these beauties in dark caramel? Of course I was right. Almost anything in the world is better with caramel.For this syrup, you start by making a dry caramel, which means there’s no need to add water in the beginning. As soon as the sugar turns dark amber brown, you hold the saucepan at arm’s length and add the water. You have to be very carefully–as soon as you add the water, the caramel will bubble up vigorously and hot steam will rise. To avoid any mishap, I recommend adding the water using a soup ladle. This way, your hand won’t get anywhere near the hot steam.Once the caramel syrup has cooled, you brush it generously over the hot babkas. And they look like this:</article>
-  <img class="recipe"  src="img/7.jpg" alt="Chocolate Babka" />
-  <article class="recipe"> And then the exhausting wait starts. You must let them cool completely before slicing. It will be hard, but your patience will be richly rewarded.</article>
-  <img class="recipe"  src="img/8.jpg" alt="Chocolate Babka" />
-  <article class="recipe"> Enjoy! </article>
+<div id="content">
+	
+	<!--Description = article.recipe-->
+	<img class="recipe"  src="img/1.jpg" alt="Chocolate Babka" />
+	<p class="recipe">	I think it was the first week o the lockdown. My doorbell rang. I hadn’t ordered anything, so I opened the door with caution. Turns out a friend of mine had bought Easter breads (flavored with mastic and mahlab) for her close-knit group of friends from a favorite bakery of mine in İstanbul, called Üstün Palmie. And I was one of those lucky recipients. It came to my door still warm from the bakery and I’ve been obsessed with baking the best version of it at home ever since. More on that later.The obsession started with that bread–actually, sweetened and flavored breads are called çörek (pronounced “chö-wreck”) in Turkey–and continued with this wonderful Chocolate Babka, drenched in a dark caramel syrup.
+	  For those who will be baking a babka for the first time, I highly recommend using a stand mixer. The dough is quite wet and sticky in the beginning and becomes smooth and much easier to work with after a 10-minute beating in the mixer. Once the dough is done, the rest is a breeze. I chill both the risen dough and the chocolate filling briefly, which makes it much easier to roll out the dough and spread the filling evenly.
+	  Once the logs are done, I prefer to chill them again until firm–this time in the freezer for 5-10 minutes–so that the layers don’t squish when you cut into the logs.
+	  The recipe makes two babkas. One is for you and the other one is for someone who you feel needs some love during these unsettling times. I wish I could have gifted my second babka to my friend who brightened my day with her thoughtful gesture, but as soon as travel restrictions were lifted she took off to her house in Selimiye–a small fishing village located on the mountainous Bozburun Peninsula, where the Mediterranean sea meets the Aegean sea and the days are always bright, with or without a babka.
+	  Classic recipes call for a simple sugar syrup, but I thought why bother with “simple” when you can drench these beauties in dark caramel? Of course I was right. Almost anything in the world is better with caramel.For this syrup, you start by making a dry caramel, which means there’s no need to add water in the beginning. As soon as the sugar turns dark amber brown, you hold the saucepan at arm’s length and add the water. You have to be very carefully–as soon as you add the water, the caramel will bubble up vigorously and hot steam will rise. To avoid any mishap, I recommend adding the water using a soup ladle. This way, your hand won’t get anywhere near the hot steam.Once the caramel syrup has cooled, you brush it generously over the hot babkas.
+	  And then the exhausting wait starts. You must let them cool completely before slicing. It will be hard, but your patience will be richly rewarded.
+		Enjoy! </p>
+
 </div>
 <div id="ingredients" >
   <h2><img class="ingredient_icon"  src="img/grocery.png" /> Ingredients</h2>
   <h3>For the dough:</h3>
+	
+	<!--Ingredients paragraph to list-->
   <ul>
     <li>3¾ cups (530 g/18.7oz) all-purpose flour , plus extra for dusting</li>
     <li>½ cup (100 g/3.5oz) granulated sugar</li>
@@ -84,9 +84,11 @@
     <li> ½ cup (100g) granulated sugar</li>
   </ul>
 </div>
-<div id="method" >
-  <h2><img class="method_icon"  src="img/bake.png" /> Method</h2>
-  <ol type= "1" class="method">
+<div id="instructions" >
+  <h2><img class="instructions_icon"  src="img/bake.png" /> Instructions</h2>
+	
+	<!--Instructions to list-->
+  <ol type= "1" class="instructions">
     <li>To make the dough, in the bowl of a stand mixer, stir together the flour and yeast.</li>
     <br>
     <li>the sugar dissolves. Remove the pan from the heat and let the mixture cool for 10 minutes.</li>
@@ -112,7 +114,7 @@
 </body>
 <footer>
   <div class = "footer-content">About us:
-    <p class="footer">The main goal of our project is to offer a website where users can view recipes. Recipes are categorized and the categories are displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.</p>
+    <p class="footer">La Marmotte is a website where users can view recipes. Recipes are categorized and the categories are displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.</p>
   </div>
 </footer>
 </html>
