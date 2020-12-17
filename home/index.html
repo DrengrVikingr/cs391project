@@ -16,17 +16,12 @@
         <form class= "categories" action="#" method="GET">
           <label for="recipes" class="label">Categories</label>
             <select name="recipes"  onchange="this.form.submit()">
+              <option disabled selected value>Select a Recipe</option>
               <optgroup label="Starters" id="starters">
-                <option></option>
-                <option></option>
                </optgroup>
-               <optgroup label="Main Dishes" id="mainDishes">
-                <option></option>
-                <option></option>
+               <optgroup label="Main Dishes" id="main_dishes">
                </optgroup>
                <optgroup label="Desserts" id="desserts">
-                <option value="nice job"></option>
-                <option></option>
                </optgroup>
             </select>
           </form>
@@ -36,13 +31,13 @@
       </nav>
   </header>
 
-  <body onload="insertRecipes();">
+  <body onload="insertRecipes(); getRecipes();">
    
     <div class = "Recipe">
       <img src = "images/profiterol.jpg">
       <form method="GET">
-        <button type ="submit" name="recipes" value="Profiterol">
-      <a class="Header" value="Profiterol">Profiterol</a>
+        <button type ="submit" name="recipes" value="recipe4">
+      <a class="Header">Profiterole</a>
     </button>  
     </form>
       </br>
@@ -56,8 +51,8 @@
       <img src = "images/babka.jpg" >
 
       <form method="GET">
-        <button type ="submit" name="recipes" value="Babka">
-      <a class="Header" value="Babka">Chocolate Babka</a>
+        <button type ="submit" name="recipes" value="recipe5">
+      <a class="Header">Chocolate Babka</a>
     </button>  
     </form>
       </br>
@@ -73,8 +68,8 @@
     
     <img src = "images/brownie.jpg">
     <form method="GET">
-      <button type ="submit" name="recipes" value="Brownie">
-    <a class="Header" value="Brownie">Brownie</a>
+      <button type ="submit" name="recipes" value="recipe6">
+    <a class="Header">Brownie</a>
   </button>  
   </form>
     </br>
