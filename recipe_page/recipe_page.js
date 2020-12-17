@@ -13,6 +13,24 @@ function getRecipe() {
 	}
 }
 
+function getRecipes() {
+    if (localStorage) {
+      if (localStorage.getItem("recipeIndex") > 0) {
+        var index = localStorage.getItem("recipeIndex");
+        for (i = 0; i < index; i++) {
+          var recipe = JSON.parse(localStorage.getItem("recipe" + i));
+          var option = document.getElementById(recipe.category);
+          var recipeOpt = document.createElement("option");
+          recipeOpt.text = recipe.name;
+          recipeOpt.value = recipe.index;
+          option.appendChild(recipeOpt);
+        }
+      }
+    } else {
+      alert("Sorry, your browser does not support local storage");
+    }
+}
+
 function readRecipeIndex(name, url = window.location.href) {
 	name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
