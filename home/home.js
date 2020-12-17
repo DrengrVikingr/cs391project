@@ -41,7 +41,7 @@ function insertRecipes() {
 	if (localStorage) {
         if (localStorage.getItem("inserted") == null) {
             var index = getRecipeIndex();
-            var caesar_salad = {"category": "starters", "name": "Caesar Salad", "author": "Natasha Kravchuk", "index": "recipe" + index,
+            var caesar_salad = {"category": "starters", "name": "Caesar Salad", "title": "Caesar Salad Recipe", "author": "Natasha Kravchuk", "index": "recipe" + index,
             "description": "My son, David, is to thank for this recipe. He is 9 years old and took kids cooking classes at Sur La Table where he learned and fell in love with this caesar salad recipe, so we re-created it at home together. Caesar salad is easy, classic and the ingredients are simple. "
             + "The crunchy homemade garlic croutons really elevate this salad, making it look and taste quite fancy. "
             + "The cheese crusted onto each little toast will have you snacking on these croutons!The caesar salad dressing comes together so fast and all you need is a bowl and whisk. "
@@ -78,7 +78,7 @@ function insertRecipes() {
             localStorage.setItem("recipe" + index, JSON.stringify(caesar_salad));
             localStorage.setItem("recipeIndex", index++);
 
-            var falafel = {"category": "starters", "name": "Falafel", "author": "Lisa Bryan", "index": "recipe" + index,
+            var falafel = {"category": "starters", "name": "Falafel", "title": "Falafel", "author": "Lisa Bryan", "index": "recipe" + index,
             "description": "Falafel are delicious balls of chickpea and herb goodness that you find in Middle Eastern cooking. Naturally vegan and vegetarian, falafel are great in wraps, pitas, sandwiches and salads. Today, I’ll share how to make both fried falafel and baked falafel. You choose your favorite! "
             + "Are you ready for the best falafel you’ve ever tasted? I’ve had my fair share of falafel on travels through Egypt, Israel and Jordan. " 
             + "I’ve had them in restaurants and on street corners (about as authentic as they come). I’ve had them stuffed in gluten-free pita and on salads. And I’ve had them with slight variations and tweaks, though the recipe itself is fairly simple. "
@@ -111,7 +111,7 @@ function insertRecipes() {
             localStorage.setItem("recipe" + index, JSON.stringify(falafel));
             localStorage.setItem("recipeIndex", index++);
             
-            var mangolian_beef = {"category": "main_dishes", "name": "Mongolian Beef", "author": "Sabrina Snyder", "index": "recipe" + index,
+            var mongolian_beef = {"category": "main_dishes", "name": "Mongolian Beef", "title": "Easy Mongolian Beef", "author": "Sabrina Snyder", "index": "recipe" + index,
             "description": "Mongolian Beef is a recipe that I’ve been cooking for clients for many years for a number of reasons. One, people love anything that tastes like Chinese takeout.\n" 
             + "Two, the sweet flavor of the dark brown sugar mixed with the salty soy sauce and the strong ginger and garlic is incredibly addicting and three you get to enjoy it over a mountain of steamed rice, which if you are anything like me is your happy place.\n"
             + "This Mongolian Beef is very flavorful and takes just 30 minutes to make from start to finish including all the slicing of the meat! It also uses basic pantry ingredients so don’t worry I am not sending you to the store today for oyster sauce or hoisin sauce. Everything in this recipe is available in every grocery store. The one thing I want to caution when preparing this dish is how thick you slice the steak.\n"
@@ -140,10 +140,10 @@ function insertRecipes() {
             + "10.	The cornstarch we used on the steak should thicken the sauce, if you find it isn't thickening enough add 1 tablespoon of cornstarch to 1 tablespoon of cold water and stir to dissolve the cornstarch and add it to the pan.\n"
             + "11.	Add the green onions, stir to combine everything, and cook for a final 20-30 seconds.\n"
             + "Serve immediately."}
-            localStorage.setItem("recipe" + index, JSON.stringify(mangolian_beef));
+            localStorage.setItem("recipe" + index, JSON.stringify(mongolian_beef));
             localStorage.setItem("recipeIndex", index++);
 
-            var lasagna = {"category": "main_dishes", "name": "Lasagna", "author": "The Most Amazing Lasagna!", "index": "recipe" + index,
+            var lasagna = {"category": "main_dishes", "name": "Lasagna", "title": "The Most Amazing Lasagna!", "author": "Rachel Farnsworth", "index": "recipe" + index,
             "description": "WHAT KIND OF CHEESE DO I USE IN LASAGNA?\n"
             + "There are three kinds of cheese in this recipe. First you have the classic lasagna filling of ricotta cheese. Use whole milk ricotta cheese in this recipe for best results. The second cheese is sliced mozzarella. We like to get our mozzarella sliced at the deli counter in our grocery store. You want the slices to be pretty thin. 24 slices is the ideal amount and it should equal somewhere around one pound. Third, you’ll need freshly grated Parmesan cheese. Don’t use shredded, you’ll want grated for best results. Also, don’t use that canned stuff. It doesn’t melt the same as real, freshly grated Parmesan cheese.\n"
             + "\n"
@@ -191,7 +191,7 @@ function insertRecipes() {
             localStorage.setItem("recipe" + index, JSON.stringify(lasagna));
             localStorage.setItem("recipeIndex", index++);
             
-            var profiterole = {"category": "desserts", "name": "Profiterole", "author": "Jane Dunn", "index": "recipe" + index,
+            var profiterole = {"category": "desserts", "name": "Profiterole", "title": "Profiteroles!", "author": "Jane Dunn", "index": "recipe" + index,
             "description": "I first learnt to make these when I was at cookery school before this blog began. It was something I had really wanted to learn to make for so long, but when looking at recipes online I would see ‘choux’ and ‘pastry’ and feel a bit disheartened and give up. After being taught it, I realise its easier than I thought. It just has a posh name\n"
             + "I would also say that these are a bit faffy, but 100% worth it if you want to wow your guests at the dinner table over the festive period with homemade profiteroles. Yes, shop bought ones such as the M&S ones are utterly delightful, but making anything yourself is always better. Usually cheaper too!I used a simple chocolate ganache style sauce for the topping because you want something sweet, chocolatey and ever so slightly gooey to stick all the profiteroles together in a pile.\n"
             + "The beautiful thing about profiteroles is you can afford to be messy. Just get a nice dish, plate, bowl, or anything and pile the profiteroles on. You don’t need to take ages presenting them because they always look glorious.\n"
@@ -238,7 +238,7 @@ function insertRecipes() {
             localStorage.setItem("recipe" + index, JSON.stringify(profiterole));
             localStorage.setItem("recipeIndex", index++);
 
-            var babka = {"category": "desserts", "name": "Chocolate Babka", "author": "Cenk Sönmezsoy", "index": "recipe" + index,
+            var babka = {"category": "desserts", "name": "Chocolate Babka", "title": "How to Make Chocolate Babka?", "author": "Cenk Sönmezsoy", "index": "recipe" + index,
             "description": "I think it was the first week o the lockdown. My doorbell rang. I hadn’t ordered anything, so I opened the door with caution. Turns out a friend of mine had bought Easter breads (flavored with mastic and mahlab) for her close-knit group of friends from a favorite bakery of mine in İstanbul, called Üstün Palmie. And I was one of those lucky recipients. It came to my door still warm from the bakery and I’ve been obsessed with baking the best version of it at home ever since. More on that later.The obsession started with that bread–actually, sweetened and flavored breads are called çörek (pronounced “chö-wreck”) in Turkey–and continued with this wonderful Chocolate Babka, drenched in a dark caramel syrup.\n"
             + "For those who will be baking a babka for the first time, I highly recommend using a stand mixer. The dough is quite wet and sticky in the beginning and becomes smooth and much easier to work with after a 10-minute beating in the mixer. Once the dough is done, the rest is a breeze. I chill both the risen dough and the chocolate filling briefly, which makes it much easier to roll out the dough and spread the filling evenly.\n"
             + "Once the logs are done, I prefer to chill them again until firm–this time in the freezer for 5-10 minutes–so that the layers don’t squish when you cut into the logs.\n"
@@ -279,7 +279,7 @@ function insertRecipes() {
             localStorage.setItem("recipe" + index, JSON.stringify(babka));
             localStorage.setItem("recipeIndex", index++);
 
-            var brownie = {"category": "desserts", "name": "Brownie", "author": "Jeanine Donofrio", "index": "recipe" + index,
+            var brownie = {"category": "desserts", "name": "Brownie", "title": "Best Homemade Brownies", "author": "Jeanine Donofrio", "index": "recipe" + index,
             "description": "For years, I couldn’t seem to find a recipe for brownies that met my standards. Anytime I made homemade brownies, I wanted them to be just like the ones I ate as a kid – super fudgy, moist, and chocolaty, with crispy edges and crackly tops. But the thing is, these brownies didn’t come from a recipe. We always made them from a box. Nowadays, I prefer to bake from scratch, but no brownie recipe I tried could live up to the chocolate brownies of my childhood.\n"
             + "So this fall, as I flipped through Michelle Lopez’s new book Weeknight Baking, her recipe for Boxed Mix Brownies, From Scratch caught my eye. Would I finally be able to make homemade brownies that would be just as delicious as the ones from a box?\n"
             + "The verdict: yes! I’ve had this brownie recipe on repeat since the first time I tried it. It calls for basic pantry ingredients, and it’s hardly more difficult than using a mix. As for the brownies, they’re true perfection – glossy, fudgy, and filled with rich chocolate flavor. Trust me, you’re going to want to make them ASAP!\n"
