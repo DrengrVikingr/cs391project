@@ -5,41 +5,41 @@
 <link rel="stylesheet" href="recipe_page.css">
 <script type="text/javascript" src="recipe_page.js"></script>
 </head>
-<header>
-  <nav><a class="icon"><img  height="50px" src="img/logo-cream.png"/></a><a class="marmotte" href="../home/index.html">La Marmotte</a>
-    <div class="navigation"><a  href="../home/index.html">Home</a><a>|</a>
-      <form class= "categories" action="#" method="GET">
-        <label for="recipes" class="label">Categories</label>
-        <select name="recipes"  onchange="this.form.submit()">
-          <optgroup label="Starters" id="starters">
-          <option></option>
-          <option></option>
-          </optgroup>
-          <optgroup label="Main Dishes" id="mainDishes">
-          <option></option>
-          <option></option>
-          </optgroup>
-          <optgroup label="Desserts" id="desserts">
-          <option value="nice job"></option>
-          <option></option>
-          </optgroup>
-        </select>
-      </form>
-      <a>|</a><a  href="../add_recipe_page/add_recipe.html">Add Recipe</a></div>
-  </nav>
-</header>
+ <header>
+    <nav>
+      <a class="icon"><img  height="50px" src="img/logo-cream.png"/></a>
+      <a class="marmotte" href="../home/index.html">La Marmotte</a>
+        <div class="navigation">
+        <a  href="../home/index.html">Home</a>
+        <a>|</a>
+        
+        <form class= "categories" action="../recipe_page/recipe_page.html" method="GET">
+          <label for="recipes" class="label">Categories</label>
+            <select name="recipes"  onchange="this.form.submit()">
+              <option disabled selected value>Select a Recipe</option>
+              <optgroup label="Starters" id="starters">
+               </optgroup>
+               <optgroup label="Main Dishes" id="main_dishes">
+               </optgroup>
+               <optgroup label="Desserts" id="desserts">
+               </optgroup>
+            </select>
+          </form>
+        <a>|</a>
+        <a  onclick="add_recipe()">Add Recipe</a>
+      </div>
+      </nav>
+  </header>
 
-<body onload="getRecipe();">
+<body onload="getRecipes(); getRecipe();">
 <div class="pagetitle"> 
   <!--title -->
   <h1 id="name" class="recipe_name">How to Make Chocolate Babka?</h1>
   <!--author -->
   <h3 id="author" class="author"><i>Cenk Sönmezsoy</i></h3>
 </div>
-<div id="content"> 
-  
-  <!--Description --> 
-  <img class="recipe"  src="img/1.jpg" alt="Chocolate Babka" /><p id= "description" class="description">I think it was the first week o the lockdown. My doorbell rang. I hadn’t ordered anything, so I opened the door with caution. Turns out a friend of mine had bought Easter breads (flavored with mastic and mahlab) for her close-knit group of friends from a favorite bakery of mine in İstanbul, called Üstün Palmie. And I was one of those lucky recipients. It came to my door still warm from the bakery and I’ve been obsessed with baking the best version of it at home ever since. More on that later.The obsession started with that bread–actually, sweetened and flavored breads are called çörek (pronounced “chö-wreck”) in Turkey–and continued with this wonderful Chocolate Babka, drenched in a dark caramel syrup.
+	<!--description --> 
+<div id="content"><p id= "description" class="description">I think it was the first week o the lockdown. My doorbell rang. I hadn’t ordered anything, so I opened the door with caution. Turns out a friend of mine had bought Easter breads (flavored with mastic and mahlab) for her close-knit group of friends from a favorite bakery of mine in İstanbul, called Üstün Palmie. And I was one of those lucky recipients. It came to my door still warm from the bakery and I’ve been obsessed with baking the best version of it at home ever since. More on that later.The obsession started with that bread–actually, sweetened and flavored breads are called çörek (pronounced “chö-wreck”) in Turkey–and continued with this wonderful Chocolate Babka, drenched in a dark caramel syrup.
     
     For those who will be baking a babka for the first time, I highly recommend using a stand mixer. The dough is quite wet and sticky in the beginning and becomes smooth and much easier to work with after a 10-minute beating in the mixer. Once the dough is done, the rest is a breeze. I chill both the risen dough and the chocolate filling briefly, which makes it much easier to roll out the dough and spread the filling evenly.
     
