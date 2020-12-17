@@ -114,7 +114,7 @@ img.recipe {
   width: 100%;
 }
 
-#ingredients { 
+#div_ingredients { 
   width: 45%;
   margin-left: 25%;
   margin-bottom: 40px;
@@ -134,7 +134,7 @@ img.ingredient_icon {
   height: 40px;
 }
 
-#instructions {
+#div_instructions {
   
   width: 45%;
   margin-left: 25%;
