@@ -1,4 +1,3 @@
-/*
 function getRecipe() {
 	if (localStorage) 
 		var recipeIndex = readRecipeIndex("recipes");
@@ -23,4 +22,4 @@ function readRecipeIndex(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-<body onload="getRecipe()"> */
+<body onload="getRecipe()"> 
