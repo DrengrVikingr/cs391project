@@ -125,8 +125,7 @@ img.recipe {
   background: #ffffff;
   font-size: 90%;
   white-space: pre-line;
-  text-align: justify;
-	line-height: 200%;
+  line-height: 200%;
 }
 
 img.ingredient_icon {
@@ -140,7 +139,7 @@ img.ingredient_icon {
   margin-left: 25%;
   margin-bottom: 100px;
   padding: 0% 2% 2% 2%;
-  text-align: justify;
+  text-align: left;
   font-family: 'Roboto';
   color: #665E56;
   background: #ffffff;
