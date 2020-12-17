@@ -1,5 +1,5 @@
 function getRecipe() {
-	if (localStorage) 
+	if (localStorage) {
 		var recipeIndex = readRecipeIndex("recipes");
 		var recipe = JSON.parse(localStorage.getItem(recipeIndex));
 		document.getElementById("author").innerHTML = recipe.author;
@@ -22,4 +22,3 @@ function readRecipeIndex(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-<body onload="getRecipe()"> 
