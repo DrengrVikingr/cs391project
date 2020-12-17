@@ -17,6 +17,7 @@ header {
     top: 0;
     position: fixed;
     color: white;
+	
 }
   
 a.icon {
@@ -38,27 +39,27 @@ nav a.marmotte {
 }
 
 div.navigation {
- float: right;
-  width: 30%;
-  padding: 1% 1% 0% 2%;
+float: right;
+width: 30%;
+padding: 1% 1% 0% 2%;
 }
 div.navigation a {
-  font-family: 'Roboto';
-  color: white;
-  text-decoration: none;
-  margin: 2.5%;
-	
+font-family: 'Roboto';
+color: white;
+text-decoration: none;
+margin: 2.5%;
+
 }
 a.icon {
   padding-left: 2%;
 }
 
 form.categories{	
-	font-family: 'Roboto';
-    color: white;
-    text-decoration: none;
-	display: inline-block;
-	margin: 2.5%;
+  font-family: 'Roboto';
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1%;
 }
 
 div.pagetitle {
@@ -100,7 +101,7 @@ p.footer {
   width: 45%;
   margin-left: 25%;
   margin-bottom: 40px;
-  padding: 0% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
   text-align: justify;
   font-family: 'Roboto';
   color: #665E56;
