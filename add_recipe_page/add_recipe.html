@@ -2,8 +2,9 @@
 <html>
   <head>
 		<link rel="stylesheet" href="add_recipe.css">
+		<script src="add_recipe.js"></script>
 	</head>
-    <body>
+    <body onload="getRecipes();">
       <header>
       <nav> 
         <a class="icon"><img  height="50px" src="img/logo-cream.png"/></a>
@@ -14,16 +15,10 @@
 			<label for="recipes" class="label">Categories</label>
 			<select name="recipes"  onchange="this.form.submit()">
 			  <optgroup label="Starters" id="starters">
-			  <option></option>
-			  <option></option>
 			  </optgroup>
-			  <optgroup label="Main Dishes" id="mainDishes">
-			  <option></option>
-			  <option></option>
+			  <optgroup label="Main Dishes" id="main_dishes">
 			  </optgroup>
 			  <optgroup label="Desserts" id="desserts">
-			  <option value="nice job"></option>
-			  <option></option>
 			  </optgroup>
 			</select>
 		      </form>
