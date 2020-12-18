@@ -1,16 +1,18 @@
-function addRecipe(){
-    var recipe_category = document.getElementById("recipe_category")[0].value;
-    var recipe_name = document.getElementById("recipe_name")[0].value;
-    var intergridents = document.getElementById("ingredients")[0].value;
-    var recipe_dec = document.getElementById("recipe_dec")[0].value;
+function getRecipeIndex() {
+	if (localStorage) {
+		if (localStorage.getItem("recipeIndex") == null) localStorage.setItem("recipeIndex", 0);
+		else return localStorage.getItem("recipeIndex");
+	}
+	else {
+		alert("Sorry, your browser does not support local storage");
+	}
+}
 
-    if(localStorage) {
-        if(localStorage.getItem(recipe_name) == null){
-            localStorage.setItem(recipe_category,recipe_name,intergridents,recipe_dec )
-        }else{
-            document.getElementById("name_error").innerHTML = "This recipe name is already exist"
-        }
-
-    }else alert("Your browser does not support local storage")
-
+function addRecipe() {
+	var index = getRecipeIndex();
+	var myrecipe = {"category": document.getElementById("recipe_category").value, "author": document.getElementById("recipe_author").innerHTML,
+	"name": document.getElementById("recipe_name").innerHTML, "title": document.getElementById("recipe_name"), "description": document.getElementById("recipe_desc").innerHTML,
+	"ingredients": document.getElementById("ingredients").innerHTML, "instructions": document.getElementById("instructions").innerHTML, "recipeIndex": index}
+	localStorage.setItem("recipe" + index, JSON.stringify(myrecipe));
+	localStorage.setItem("recipeIndex", ++index);
 }
