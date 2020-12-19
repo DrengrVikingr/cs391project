@@ -90,14 +90,14 @@ div.Recipe img {
 }
 a.Header {
   vertical-align: top;
-  padding-left: 45px;
+  padding-left: 40px;
   font-size: 30px;
   color: #504A44 ;
   font-weight: bold;
 }
 
 a.Author {
-  padding-left: 45px;
+  padding-left: 47px;
   font-size: 20px;
   color: #504A44 ;
   font-style: italic;
