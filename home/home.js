@@ -1,5 +1,5 @@
 function add_recipe() {
-    if (sessionStorage.getItem("login") == true) {
+    if (sessionStorage.getItem("login") != null) {
         window.location.href = "../add_recipe_page/add_recipe.html";
     }
     else {

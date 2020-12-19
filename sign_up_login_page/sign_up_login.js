@@ -1,7 +1,7 @@
 function checkEmpty() {
   var email = document.getElementsByName("email_address_sign_up")[0].value;
-  var name = document.getElementsByName("name")[0];
-  var surname = document.getElementsByName("surname")[0];
+  var name = document.getElementsByName("user_name")[0].value;
+  var surname = document.getElementsByName("user_surname")[0].value;
   var birthdate = document.getElementById("birthdate").value;
   var password = document.getElementsByName("password_sign_up")[0].value;
   return email != "" & name != null & surname != null & birthdate != "" & password != "";
