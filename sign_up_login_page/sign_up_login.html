@@ -6,22 +6,17 @@
 	</head>
 	<body onload="getRecipes()">
 		<header>
-		  <nav> <a class="icon"><img  height="50px" src="img/logo-cream.png"/></a> <a class="marmotte" href="../home/index.html">La Marmotte</a>
+		  <nav> <a class="icon"><img  height="50px" src="../images/logo-cream.png"/></a> <a class="marmotte" href="../home/index.html">La Marmotte</a>
 		    <div class="navigation"> <a  href="../home/index.html">Home</a> <a>|</a>
 		      <form class= "categories" action="#" method="GET">
 			<label for="recipes" class="label">Categories</label>
 			<select name="recipes"  onchange="this.form.submit()">
+				<option disabled selected value>Select a Recipe</option>
 			  <optgroup label="Starters" id="starters">
-			  <option></option>
-			  <option></option>
 			  </optgroup>
-			  <optgroup label="Main Dishes" id="mainDishes">
-			  <option></option>
-			  <option></option>
+			  <optgroup label="Main Dishes" id="main_dishes">
 			  </optgroup>
 			  <optgroup label="Desserts" id="desserts">
-			  <option value="nice job"></option>
-			  <option></option>
 			  </optgroup>
 			</select>
 		      </form>
@@ -59,7 +54,7 @@
 		</div>	
 		<footer>
 			<div class = "footer-content">About us:
-				<p class="footer">The main goal of our project is to offer a website where users can view recipes. Recipes are categorized and the categories are displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.</p>
+				<p class="footer">La Marmotte is a website where users can view recipes. Recipes are categorised and the categories are displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.</p>
 			</div>
 		</footer>
 	</body>
