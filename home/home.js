@@ -300,7 +300,7 @@ function insertRecipes() {
             + "3.	In a large bowl, whisk together the eggs, olive oil, water, and vanilla. Sprinkle the dry mix over the wet mix and stir until just combined.\n"
             + "4.	Pour the batter into the prepared pan (it'll be thick - that's ok) and use a spatula to smooth the top. Bake for 40 to 48 minutes, or until a toothpick comes out with only a few crumbs attached (note: it's better to pull the brownies out early than to leave them in too long).\n"
             + "5.	Cool completely before slicing.*** Store in an airtight container at room temperature for up to 3 days. These also freeze well!"}
-            localStorage.setItem("recipe" + index, JSON.stringify(babka));
+            localStorage.setItem("recipe" + index, JSON.stringify(brownie));
             localStorage.setItem("recipeIndex", index++);
 
             localStorage.setItem("inserted", true);
