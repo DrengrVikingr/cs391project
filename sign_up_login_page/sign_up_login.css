@@ -39,8 +39,8 @@ nav a.marmotte {
 
 div.navigation {
   float: right;
-  width: 30%;
-  padding: 1% 1% 0% 2%;
+  width: 40%;
+  padding: 1% 1% 0% 1%;
 }
 div.navigation a {
   font-family: 'Roboto';
@@ -53,7 +53,7 @@ form.categories{
     color: white;
     text-decoration: none;
 	display: inline-block;
-	margin: 2.5%;
+	margin: 1%;
 }
 form.sign_up{
     display: inline-block;
