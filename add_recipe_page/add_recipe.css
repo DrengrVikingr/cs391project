@@ -56,12 +56,14 @@ form.categories{
 	margin: 1%;
 }
 form.sign_up{
+    font-family: 'Roboto';
     display: inline-block;
     width: 40%;
     margin: 2.5%;
     background-color: rgb(166, 156, 146, 0.3);
 }
 form.login{
+    font-family: 'Roboto';
     display: inline-block;
     width: 40%;
     margin: 2.5%;
