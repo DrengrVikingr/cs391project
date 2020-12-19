@@ -34,7 +34,7 @@ nav a.marmotte {
 div.navigation {
 float: right;
 width: 40%;
-padding: 1% 1% 0% 1%;
+padding: 1% 1% 0% 2%;
 }
 div.navigation a {
 font-family: 'Roboto';
@@ -74,6 +74,7 @@ line-height: 15px;
 body {
   background: #fff5ea;
   margin-top: 5%;
+  
 }
 
 
@@ -90,14 +91,14 @@ div.Recipe img {
 }
 a.Header {
   vertical-align: top;
-  padding-left: 45px;
+  padding-left: 40px;
   font-size: 30px;
   color: #504A44 ;
   font-weight: bold;
 }
 
 a.Author {
-  padding-left: 45px;
+  padding-left: 47px;
   font-size: 20px;
   color: #504A44 ;
   font-style: italic;
