@@ -1,3 +1,13 @@
+function add_recipe() {
+  if (sessionStorage.getItem("login") != null) {
+    setTimeout(function(){document.location.href = "../add_recipe_page/add_recipe.html";},250);
+  }
+  else {
+    setTimeout(function(){document.location.href = "../sign_up_login_page/sign_up_login.html";},250);
+      alert("login to add recipes");
+  }
+}
+
 function getRecipeIndex() {
 	if (localStorage) {
 		if (localStorage.getItem("recipeIndex") == null) localStorage.setItem("recipeIndex", 0);
@@ -9,12 +19,17 @@ function getRecipeIndex() {
 }
 
 function addRecipe() {
-	var index = getRecipeIndex();
-	var myrecipe = {"category": document.getElementById("recipe_category").value, "author": document.getElementById("recipe_author").value,
-	"name": document.getElementById("recipe_name").value, "title": document.getElementById("recipe_name").value, "description": document.getElementById("recipe_desc").value,
-	"ingredients": document.getElementById("ingredients").value, "instructions": document.getElementById("instructions").value, "recipeIndex": index}
-	localStorage.setItem("recipe" + index, JSON.stringify(myrecipe));
-	localStorage.setItem("recipeIndex", ++index);
+  if(localStorage) {
+    var index = getRecipeIndex();
+    var myrecipe = {"category": document.getElementById("recipe_category").value, "author": document.getElementById("recipe_author").value,
+    "name": document.getElementById("recipe_name").value, "title": document.getElementById("recipe_name").value, "description": document.getElementById("recipe_desc").value,
+    "ingredients": document.getElementById("ingredients").value, "instructions": document.getElementById("instructions").value, "index": "recipe" + index}
+    localStorage.setItem("recipe" + index, JSON.stringify(myrecipe));
+    localStorage.setItem("recipeIndex", ++index);
+  }
+  else {
+    alert("Sorry, your browser does not support local storage");
+  }
 }
 
 function getRecipes() {

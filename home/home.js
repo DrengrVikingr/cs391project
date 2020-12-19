@@ -1,10 +1,10 @@
 function add_recipe() {
     if (sessionStorage.getItem("login") != null) {
-        window.location.href = "../add_recipe_page/add_recipe.html";
+      setTimeout(function(){document.location.href = "../add_recipe_page/add_recipe.html";},250);
     }
     else {
-        window.location.href = "../sign_up_login_page/sign_up_login.html";
-        alert("You should login to add recipes");
+      setTimeout(function(){document.location.href = "../sign_up_login_page/sign_up_login.html";},250);
+        alert("login to add recipes");
     }
 }
 
@@ -76,7 +76,7 @@ function insertRecipes() {
             + "2.	Place in a large serving bowl and sprinkle generously with shredded parmesan cheese and cooled croutons.\n"
             + "3.	Drizzle with caesar dressing and toss gently until lettuce is evenly coated."}
             localStorage.setItem("recipe" + index, JSON.stringify(caesar_salad));
-            localStorage.setItem("recipeIndex", index++);
+            localStorage.setItem("recipeIndex", ++index);
 
             var falafel = {"category": "starters", "name": "Falafel", "title": "Falafel", "author": "Lisa Bryan", "index": "recipe" + index,
             "description": "Falafel are delicious balls of chickpea and herb goodness that you find in Middle Eastern cooking. Naturally vegan and vegetarian, falafel are great in wraps, pitas, sandwiches and salads. Today, I’ll share how to make both fried falafel and baked falafel. You choose your favorite! "
@@ -109,7 +109,7 @@ function insertRecipes() {
             + "Removing the falafel from the pan once they're cooked and golden.\n"
             + "Serve the falafel immediately, while warm and crispy on the outside. They're delicious served with tahini sauce as well.\n"}
             localStorage.setItem("recipe" + index, JSON.stringify(falafel));
-            localStorage.setItem("recipeIndex", index++);
+            localStorage.setItem("recipeIndex", ++index);
             
             var mongolian_beef = {"category": "main_dishes", "name": "Mongolian Beef", "title": "Easy Mongolian Beef", "author": "Sabrina Snyder", "index": "recipe" + index,
             "description": "Mongolian Beef is a recipe that I’ve been cooking for clients for many years for a number of reasons. One, people love anything that tastes like Chinese takeout.\n" 
@@ -141,7 +141,7 @@ function insertRecipes() {
             + "11.	Add the green onions, stir to combine everything, and cook for a final 20-30 seconds.\n"
             + "Serve immediately."}
             localStorage.setItem("recipe" + index, JSON.stringify(mongolian_beef));
-            localStorage.setItem("recipeIndex", index++);
+            localStorage.setItem("recipeIndex", ++index);
 
             var lasagna = {"category": "main_dishes", "name": "Lasagna", "title": "The Most Amazing Lasagna!", "author": "Rachel Farnsworth", "index": "recipe" + index,
             "description": "WHAT KIND OF CHEESE DO I USE IN LASAGNA?\n"
@@ -189,7 +189,7 @@ function insertRecipes() {
             + "4.	To assemble, spread about 1 cup of meat sauce in the bottom of the prepared pan. Place 4 noodles on top. Spread with 1/3 of the ricotta cheese mixture. Top with 1/4 of mozzarella cheese slices. Spoon 1 1/2 cups meat sauce over mozzarella, then sprinkle with 1/4 cup parmesan cheese. Repeat layering two more times to create three complete layers. To finish, place a final layer of pasta, topped with another 1 cup of meat sauce to cover the pasta. Top with remaining mozzarella and Parmesan cheese. Cover loosely with aluminum foil.\n"
             + "5.	Bake in preheated oven for 25 minutes. Remove foil, and bake an additional 25 minutes to allow cheese to brown. Serve hot."}
             localStorage.setItem("recipe" + index, JSON.stringify(lasagna));
-            localStorage.setItem("recipeIndex", index++);
+            localStorage.setItem("recipeIndex", ++index);
             
             var profiterole = {"category": "desserts", "name": "Profiterole", "title": "Profiteroles!", "author": "Jane Dunn", "index": "recipe" + index,
             "description": "I first learnt to make these when I was at cookery school before this blog began. It was something I had really wanted to learn to make for so long, but when looking at recipes online I would see ‘choux’ and ‘pastry’ and feel a bit disheartened and give up. After being taught it, I realise its easier than I thought. It just has a posh name\n"
@@ -236,7 +236,7 @@ function insertRecipes() {
             + "3.	Leave to cool before using!\n"
             + "4.	Coat the profiteroles with the sauce and then decorate how you fancy. I made a giant pile and then drizzled over some extra chocolate!"}
             localStorage.setItem("recipe" + index, JSON.stringify(profiterole));
-            localStorage.setItem("recipeIndex", index++);
+            localStorage.setItem("recipeIndex", ++index);
 
             var babka = {"category": "desserts", "name": "Chocolate Babka", "title": "How to Make Chocolate Babka?", "author": "Cenk Sönmezsoy", "index": "recipe" + index,
             "description": "I think it was the first week o the lockdown. My doorbell rang. I hadn’t ordered anything, so I opened the door with caution. Turns out a friend of mine had bought Easter breads (flavored with mastic and mahlab) for her close-knit group of friends from a favorite bakery of mine in İstanbul, called Üstün Palmie. And I was one of those lucky recipients. It came to my door still warm from the bakery and I’ve been obsessed with baking the best version of it at home ever since. More on that later.The obsession started with that bread–actually, sweetened and flavored breads are called çörek (pronounced “chö-wreck”) in Turkey–and continued with this wonderful Chocolate Babka, drenched in a dark caramel syrup.\n"
@@ -277,7 +277,7 @@ function insertRecipes() {
             + "11.	Using a large heavy serrated knife, cut each of the logs in half lengthwise, exposing the layers. Place two log halves on the cutting board with the cut sides facing up and overlap the top end of one half over the other and pinch the ends together. Working your way down, fold the halves over each other as if you are braiding them until you reach the bottom ends. Pinch together the bottom ends and place the braided dough in one of the prepared pans. Gently arrange the dough so that the top is level and the ends touch the pan on both ends to ensure an even rise. Repeat the same steps for the other two log halves. Cover the pans loosely with plastic wrap and let them rise in a warm spot until they are almost doubled in size and reach 1/2 inch above the top of the pan, 60-75 minutes.\n"
             + "12.	At least 30 minutes before baking, set a rack in the middle of the oven and preheat the oven to 350°F (180°C)."}
             localStorage.setItem("recipe" + index, JSON.stringify(babka));
-            localStorage.setItem("recipeIndex", index++);
+            localStorage.setItem("recipeIndex", ++index);
 
             var brownie = {"category": "desserts", "name": "Brownie", "title": "Best Homemade Brownies", "author": "Jeanine Donofrio", "index": "recipe" + index,
             "description": "For years, I couldn’t seem to find a recipe for brownies that met my standards. Anytime I made homemade brownies, I wanted them to be just like the ones I ate as a kid – super fudgy, moist, and chocolaty, with crispy edges and crackly tops. But the thing is, these brownies didn’t come from a recipe. We always made them from a box. Nowadays, I prefer to bake from scratch, but no brownie recipe I tried could live up to the chocolate brownies of my childhood.\n"
@@ -301,7 +301,7 @@ function insertRecipes() {
             + "4.	Pour the batter into the prepared pan (it'll be thick - that's ok) and use a spatula to smooth the top. Bake for 40 to 48 minutes, or until a toothpick comes out with only a few crumbs attached (note: it's better to pull the brownies out early than to leave them in too long).\n"
             + "5.	Cool completely before slicing.*** Store in an airtight container at room temperature for up to 3 days. These also freeze well!"}
             localStorage.setItem("recipe" + index, JSON.stringify(brownie));
-            localStorage.setItem("recipeIndex", index++);
+            localStorage.setItem("recipeIndex", ++index);
 
             localStorage.setItem("inserted", true);
             }

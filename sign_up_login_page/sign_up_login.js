@@ -57,11 +57,21 @@ function getRecipes() {
         var option = document.getElementById(recipe.category);
         var recipeOpt = document.createElement("option");
         recipeOpt.text = recipe.name;
-        recipeOpt.value = recipe.name;
+        recipeOpt.value = recipe.index;
         option.appendChild(recipeOpt);
       }
     }
   } else {
     alert("Sorry, your browser does not support local storage");
+  }
+}
+
+function add_recipe() {
+  if (sessionStorage.getItem("login") != null) {
+    setTimeout(function(){document.location.href = "../add_recipe_page/add_recipe.html";},250);
+  }
+  else {
+    setTimeout(function(){document.location.href = "../sign_up_login_page/sign_up_login.html";},250);
+      alert("login to add recipes");
   }
 }
