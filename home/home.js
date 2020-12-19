@@ -4,7 +4,7 @@ function add_recipe() {
     }
     else {
         window.location.href = "../sign_up_login_page/sign_up_login.html";
-        alert("You should login first");
+        alert("You should login to add recipes");
     }
 }
 
