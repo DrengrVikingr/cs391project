@@ -49,3 +49,14 @@ function add_recipe() {
       alert("login to add recipes");
   }
 }
+
+function checkInserted() {
+  if (localStorage) {
+    if (localStorage.getItem("inserted") == null) {
+      setTimeout(function(){document.location.href = "../home/index.html";},250);
+    }
+  }
+  else {
+    alert("Sorry, your browser does not support local storage");
+  }
+}
