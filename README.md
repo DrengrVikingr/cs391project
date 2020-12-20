@@ -25,6 +25,8 @@ Zeliha Aydın -> Add Recipe page
 Our project does not make use of any external libraries.
 
 5.
-- Download project
-- Open the project in VSCode with live server kit.                                                               
-   
+- Download the project
+- Open the project in VSCode with live server kit.\
+OR
+- Download the project
+- Open /home/index.html with your favourite browser (preferably Chrome)
