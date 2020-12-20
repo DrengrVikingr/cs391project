@@ -3,7 +3,7 @@ function getRecipe() {
 		var recipeIndex = readRecipeIndex("recipes");
 		var recipe = JSON.parse(localStorage.getItem(recipeIndex));
 		document.getElementById("author").innerHTML = recipe.author;
-		document.getElementById("name").innerHTML = recipe.name;
+		document.getElementById("name").innerHTML = recipe.title;
 		document.getElementById("description").innerHTML = recipe.description;
 		document.getElementById("ingredients").innerHTML = recipe.ingredients;
 		document.getElementById("instructions").innerHTML = recipe.instructions;
@@ -49,6 +49,7 @@ function add_recipe() {
       alert("login to add recipes");
   }
 }
+<<<<<<< HEAD
 
 function checkInserted() {
   if (localStorage) {
@@ -60,3 +61,5 @@ function checkInserted() {
     alert("Sorry, your browser does not support local storage");
   }
 }
+=======
+>>>>>>> 4ab7a2d9f1c045e21470566694875701f53937d5
