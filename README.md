@@ -4,7 +4,7 @@
 Group Members: Yasemin Orhun, Eray Özdayıoğlu, Zeliha Aydın, Hasan Erdem Bilgin
 
 1.
-The main goal of our project is to offer a website where users can view recipes. Recipes are categorized and the categories are displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.
+The main goal of our project is to offer a website where users can view recipes. Recipes are categorized and displayed on a different page. Users can also add their own recipes but they are required to sign up and/or login to our website to do so.
 
 2.
 - Home Page is displayed
