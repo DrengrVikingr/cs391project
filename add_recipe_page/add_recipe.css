@@ -74,9 +74,7 @@ input {
     margin-top: 15px;
 }
 
-p {
-    color: rgba(150,140,131,0.85);
-}
+
 p.error {
     color: rgba(150,140,131,0.85);
 }
