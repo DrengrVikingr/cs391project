@@ -49,7 +49,6 @@ function add_recipe() {
       alert("login to add recipes");
   }
 }
-<<<<<<< HEAD
 
 function checkInserted() {
   if (localStorage) {
@@ -61,5 +60,3 @@ function checkInserted() {
     alert("Sorry, your browser does not support local storage");
   }
 }
-=======
->>>>>>> 4ab7a2d9f1c045e21470566694875701f53937d5
