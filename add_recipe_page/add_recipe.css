@@ -77,6 +77,9 @@ input {
 p {
     color: rgba(150,140,131,0.85);
 }
+p.error {
+    color: rgba(150,140,131,0.85);
+}
   
 button {
     display: inline-block;
@@ -94,19 +97,13 @@ footer {
     width: 100%;
     display: inline-block;
     height: 80px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-
-div.footer-content {
+  }
+  
+  div.footer-content {
     text-align: center;
     padding-top: 15px;
-}
-
-p.footer {
+  }
+  
+  p.footer {
     font-size: 10px;
-    color: #ffffff;
-}
-
+  }
